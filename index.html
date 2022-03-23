@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <script src="script/script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div>
+        <img src="img/Poke+Ball.png" width="60px" align="left" />
+    </div>
+    <div class="poke">
+        <div data-card class="poke-card">
+            <div data-name class="name">Pokedex</div>
+            <div class="img-container">
+                <img data-img class="poke-img" src="img/pika.png" />
+            </div>
+            <div data-id></div>
+            <div data-types class="poke-types"></div>
+            <div data-stats class="poke-stats"></div>
+            <div data-moves class="poke-moves" id="txt_moves"></div>
+        </div>
+        <div class="btn">
+            <input type="text" readonly /> <input type="text" readonly />
+        </div>
+        <form onsubmit="Pokemon(event)">
+            <input type="text" name="pokemon" placeholder="Escribe aqui..." autocomplete="off" />
+        </form>
+    </div>
+</body>
+
+</html>
